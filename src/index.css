@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-secondary: #f59e0b;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-hover: #f1f5f9;
+  --font-sans: Pretendard, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-slate-900 font-sans antialiased;
+  }
+}
