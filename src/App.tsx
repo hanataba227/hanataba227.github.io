@@ -19,7 +19,7 @@ function App() {
                 <li><a href="/#about" className="hover:text-primary transition-colors">About</a></li>
                 <li><a href="/#experience" className="hover:text-primary transition-colors">Experience</a></li>
                 <li><a href="/#projects" className="hover:text-primary transition-colors">Projects</a></li>
-                <li><a href="/#activities" className="hover:text-primary transition-colors">Activities</a></li>
+                <li><a href="/#awards" className="hover:text-primary transition-colors">Awards</a></li>
                 <li><a href="/#contact" className="hover:text-primary transition-colors">Contact</a></li>
               </ul>
             </nav>
