@@ -50,7 +50,7 @@ function Home() {
                             Projects
                         </a>
                         <a href="#contact" className="px-8 py-3 bg-white border border-slate-200 text-slate-700 rounded-full font-bold hover:bg-slate-50 transition-colors">
-                            Contact Me
+                            Contact
                         </a>
                     </div>
                 </div>
