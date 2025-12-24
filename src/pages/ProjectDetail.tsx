@@ -104,7 +104,7 @@ const projectData: Record<number, Project> = {
             { name: "GitHub Repository", url: "https://github.com/hanataba227/JobTalk", type: "github" }
         ],
         intro: "사용자의 역량과 목표 직무를 분석하여 개인화된 진로 로드맵을 제시하고, 부족한 역량을 보완할 수 있는 구체적인 가이드를 제공하는 AI 솔루션",
-        team: `구성 : 프론트엔드, 서버 1명, 백엔드, DB 1명, AI 서비스 1명, UX/UI 디자이너 1명\n
+        team: `구성 : 프론트엔드/서버 1명, 백엔드/DB 1명, AI 서비스 1명, UX/UI 디자이너 1명\n
 담당 역할 : AI 구조 설계 및 프롬프트 엔지니어링 (역할 기여도 90%, 전체 기여도 20%)`,
         description: `### 1. 개발 배경
 - 대학생들은 본인 상황에 맞는 진로 설계에 어려움을 겪고 있음
