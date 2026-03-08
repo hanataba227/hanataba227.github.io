@@ -101,7 +101,8 @@ const projectData: Record<number, Project> = {
         period: "2025.08 ~ 2025.12",
         tags: ["React", "Node.js", "MariaDB", "OpenAI API"],
         links: [
-            { name: "GitHub Repository", url: "https://github.com/hanataba227/JobTalk", type: "github" }
+            { name: "GitHub Repository", url: "https://github.com/hanataba227/JobTalk", type: "github" },
+            { name: "JobTalk 서비스", url: "https://vactor0911.github.io/jobtalk/", type: "external" }
         ],
         intro: "사용자의 역량과 목표 직무를 분석하여 개인화된 진로 로드맵을 제시하고, 부족한 역량을 보완할 수 있는 구체적인 가이드를 제공하는 AI 솔루션",
         team: `구성 : 프론트엔드/서버 1명, 백엔드/DB 1명, AI 서비스 1명, UX/UI 디자이너 1명\n
@@ -132,7 +133,8 @@ const projectData: Record<number, Project> = {
         period: "2025.03 ~ 2025.12",
         tags: ["React", "Node.js", "Supabase", "FastAPI", "OpenAI API"],
         links: [
-            { name: "GitHub Repository", url: "https://github.com/hanataba227/qureka-fastapi", type: "github" }
+            { name: "GitHub Repository", url: "https://github.com/hanataba227/qureka-fastapi", type: "github" },
+            { name: "Qureka 서비스", url: "https://qureka.vercel.app/", type: "external" }
         ],
         intro: "사용자가 디지털 교육자료(PDF, PPT 등)를 업로드하여, 자료의 정보를 요약하고, 이를 바탕으로 문제를 생성해주는 프로그램",
         team: `구성 : 프론트엔드 1명, 백엔드(Node.js), DB 2명, 백엔드(FastAPI), AI 서비스 1명\n
@@ -313,6 +315,7 @@ function ProjectDetail() {
                                     src={`/images/image_${id}_${currentImageIndex + 1}.png`}
                                     alt={`${project.title} Screenshot ${currentImageIndex + 1}`}
                                     className="w-full h-full object-contain"
+                                    loading="lazy"
                                     onError={(e) => {
                                         const target = e.target as HTMLImageElement;
                                         target.style.display = 'none';

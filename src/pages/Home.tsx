@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Ear, Lightbulb, NotebookPen } from 'lucide-react';
+import { ShieldCheck, Cpu, Rocket } from 'lucide-react';
 
 const projects = [
     {
@@ -66,24 +66,24 @@ function Home() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:-translate-y-1 transition-transform duration-300">
-                            <Ear className="w-10 h-10 mb-4 text-slate-900" strokeWidth={1.5} />
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">불편함을 해결하는 경험</h3>
+                            <ShieldCheck className="w-10 h-10 mb-4 text-slate-900" strokeWidth={1.5} />
+                            <h3 className="text-xl font-bold text-slate-900 mb-3">AI 보안을 설계합니다</h3>
                             <p className="text-slate-600 leading-relaxed">
-                                사용자의 불편함을 바탕으로 기술적 해결책을 제시합니다. 피드백을 기능 개선과 성능 고도화로 연결하여 편의를 극대화합니다.
+                                OWASP LLM Top 10 기반의 보안 위협을 분석하고, 실습 플랫폼을 직접 구축했습니다. 안전한 AI 서비스를 위한 방어 방법을 설계합니다.
                             </p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:-translate-y-1 transition-transform duration-300">
-                            <Lightbulb className="w-10 h-10 mb-4 text-slate-900" strokeWidth={1.5} />
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">비즈니스 가치 지향</h3>
+                            <Cpu className="w-10 h-10 mb-4 text-slate-900" strokeWidth={1.5} />
+                            <h3 className="text-xl font-bold text-slate-900 mb-3">모델을 서비스에 맞게 최적화합니다</h3>
                             <p className="text-slate-600 leading-relaxed">
-                                단순 구현을 넘어 안전을 고민합니다. 보안 위협을 막는 선제적 대응을 통해 기술 부채를 최소화합니다.
+                                AI 모델을 실제 환경에서 동작하도록 경량화합니다. TensorRT와 양자화를 활용해 모빌리티 환경에 적용 가능하게 최적화한 경험이 있습니다.
                             </p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:-translate-y-1 transition-transform duration-300">
-                            <NotebookPen className="w-10 h-10 mb-4 text-slate-900" strokeWidth={1.5} />
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">기록과 공유</h3>
+                            <Rocket className="w-10 h-10 mb-4 text-slate-900" strokeWidth={1.5} />
+                            <h3 className="text-xl font-bold text-slate-900 mb-3">아이디어를 서비스로 완성합니다</h3>
                             <p className="text-slate-600 leading-relaxed">
-                                개발 과정의 정보를 정량적 데이터로 남깁니다. 실험 결과와 진행 상황을 체계적으로 공유하여 팀의 문제 해결 속도를 높입니다.
+                                기획부터 프론트 및 백엔드 개발, 배포, 전시 부스 운영까지 서비스의 전 과정을 경험했습니다. 5회 수상한 실행력과 완성도로 아이디어를 현실로 만들어냅니다.
                             </p>
                         </div>
                     </div>
@@ -107,7 +107,8 @@ function Home() {
                                 <div>
                                     <span className="text-sm text-slate-500 font-bold">2025.03 ~ 2025.09 (6개월)</span>
                                     <h4 className="text-lg font-bold text-slate-800">KITRI 차세대 보안리더 양성 프로그램 (WhiteHat School 3기)</h4>
-                                    <p className="text-slate-600">정보보안 전문가 양성 트랙</p>
+                                    <p className="text-slate-600">최신 정보보안 기초 역량 교육 및 기술 멘토링 참여</p>
+                                    <p className="text-slate-600">HackLLM(해킹을 통해 배우는 LLM 보안) 프로젝트를 진행하며 LLM Red Teaming 및 보안 교육 플랫폼 개발</p>
                                 </div>
                                 <div>
                                     <span className="text-sm text-slate-500 font-bold">2024.03 ~ 2026.02</span>
@@ -172,6 +173,7 @@ function Home() {
                                         src={`/images/image_${project.id}_1.png`}
                                         alt={project.title}
                                         className="w-full h-full object-cover"
+                                        loading="lazy"
                                         onError={(e) => {
                                             const target = e.target as HTMLImageElement;
                                             target.style.display = 'none';
