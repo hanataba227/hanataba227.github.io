@@ -112,13 +112,11 @@ function Home() {
                                 </div>
                                 <div>
                                     <span className="text-sm text-slate-500 font-bold">2024.03 ~ 2026.02</span>
-                                    <h4 className="text-lg font-bold text-slate-800">DSC 지역혁신플랫폼 (대전·세종·충남)</h4>
-                                    <p className="text-slate-600">모빌리티SW/AI 융합전공 (복수전공)</p>
+                                    <h4 className="text-lg font-bold text-slate-800">DSC공유대학 모빌리티SW/AI융합전공 (복수전공)</h4>
                                 </div>
                                 <div>
                                     <span className="text-sm text-slate-500 font-bold">2022.03 ~ 2026.02</span>
-                                    <h4 className="text-lg font-bold text-slate-800">목원대학교</h4>
-                                    <p className="text-slate-600">컴퓨터공학과 (주전공)</p>
+                                    <h4 className="text-lg font-bold text-slate-800">목원대학교 컴퓨터공학과 학사 (주전공)</h4>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +128,7 @@ function Home() {
                             <div className="mt-4 space-y-6">
                                 <div>
                                     <span className="text-sm text-slate-500 font-bold">2024.11, 2025.11</span>
-                                    <h4 className="text-lg font-bold text-slate-800">포트폴리오 페스타 2024, 2025</h4>
+                                    <h4 className="text-lg font-bold text-slate-800">2024, 2025 포트폴리오 페스타</h4>
                                     <p className="text-slate-700 font-semibold mb-1">전시 참여 및 부스 운영</p>
                                     <p className="text-slate-600">
                                         프로젝트 큐레카(Qureka), 잡톡(JobTalk)
@@ -138,7 +136,7 @@ function Home() {
                                 </div>
                                 <div>
                                     <span className="text-sm text-slate-500 font-bold">2025.11</span>
-                                    <h4 className="text-lg font-bold text-slate-800">SW중심대학 인재 페스티벌</h4>
+                                    <h4 className="text-lg font-bold text-slate-800">2025 SW중심대학 인재 페스티벌</h4>
                                     <p className="text-slate-700 font-semibold mb-1">전시 참여 및 부스 운영</p>
                                     <p className="text-slate-600">
                                         프로젝트 잡톡(JobTalk)
