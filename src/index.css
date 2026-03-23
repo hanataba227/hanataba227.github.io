@@ -85,12 +85,9 @@
     background-color: #fff !important;
   }
 
-  /* Contact 섹션 인쇄 최적화 */
+  /* Contact 섹션 인쇄 시 숨기기 */
   #contact {
-    background-color: #1e293b !important;
-    color: #fff !important;
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
+    display: none !important;
   }
 
   /* 카드 그림자, hover 효과 제거 */
