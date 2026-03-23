@@ -42,9 +42,7 @@ function Home() {
                         안전한 AI를 만드는<br />
                         <span className="text-primary">개발자, 임희진입니다.</span>
                     </h2>
-                    <p className="text-xl text-slate-500 mb-12">
-                        AI의 보안 위협을 방어하고, 견고한 서비스 환경을 구축합니다.
-                    </p>
+                    <div className="mb-16"></div>
                     <div className="flex justify-center gap-4">
                         <a href="#projects" className="px-8 py-3 bg-primary text-white rounded-full font-bold hover:bg-blue-600 transition-colors">
                             Projects

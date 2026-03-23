@@ -19,3 +19,167 @@
     @apply bg-bg text-slate-900 font-sans antialiased;
   }
 }
+
+/* A4 인쇄용 스타일 */
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm 12mm;
+  }
+
+  body {
+    font-size: 10pt;
+    line-height: 1.3;
+    color: #000 !important;
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* 네비게이션 바 및 Back to Home 링크 숨기기 */
+  nav, header, a[href="/"] {
+    display: none !important;
+  }
+
+  /* Hero 섹션: 전체 화면 높이 제거, 컴팩트하게 */
+  #hero {
+    min-height: auto !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  #hero h2 {
+    font-size: 2rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #hero p {
+    font-size: 0.95rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* pt-20 제거 */
+  .pt-20 {
+    padding-top: 0 !important;
+  }
+
+  /* Hero 버튼 숨기기 (인쇄에서 클릭 불가) */
+  #hero .flex.justify-center.gap-4 {
+    display: none !important;
+  }
+
+  /* 섹션 간격 축소 */
+  section {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  /* 섹션 제목 간격 축소 */
+  section h2 {
+    margin-bottom: 0.75rem !important;
+    font-size: 1.4rem !important;
+  }
+
+  /* 배경색 제거 (잉크 절약) */
+  .bg-slate-50 {
+    background-color: #fff !important;
+  }
+
+  /* Contact 섹션 인쇄 최적화 */
+  #contact {
+    background-color: #1e293b !important;
+    color: #fff !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  /* 카드 그림자, hover 효과 제거 */
+  .shadow-sm, .shadow-lg {
+    box-shadow: none !important;
+  }
+
+  /* About Me 카드 패딩 축소 */
+  #about .bg-white {
+    padding: 1rem !important;
+  }
+
+  #about h3 {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  #about p {
+    font-size: 0.85rem !important;
+  }
+
+  /* 프로젝트 카드 이미지 높이 축소 */
+  .h-64 {
+    height: 8rem !important;
+  }
+
+  /* 프로젝트 카드 내부 패딩 축소 */
+  #projects .p-8 {
+    padding: 0.75rem !important;
+  }
+
+  #projects h3 {
+    font-size: 1rem !important;
+  }
+
+  #projects .text-lg {
+    font-size: 0.85rem !important;
+  }
+
+  /* Experience 섹션 간격 축소 */
+  #experience .space-y-12 > * + * {
+    margin-top: 1.5rem !important;
+  }
+
+  #experience .space-y-6 > * + * {
+    margin-top: 0.75rem !important;
+  }
+
+  /* Awards 리스트 간격 축소 */
+  #awards .space-y-4 > * + * {
+    margin-top: 0.5rem !important;
+  }
+
+  /* 페이지 브레이크 제어 */
+  #about {
+    break-inside: avoid;
+  }
+
+  /* 프로젝트 섹션은 break 허용 (4개 카드가 많으므로) */
+  #projects {
+    break-before: auto;
+  }
+
+  /* 프로젝트 카드가 페이지에 걸쳐 잘리지 않도록 */
+  .rounded-2xl {
+    break-inside: avoid;
+  }
+
+  /* Awards + Contact는 함께 유지 */
+  #awards {
+    break-after: avoid;
+  }
+
+  /* 링크에 URL 표시하지 않음 (깔끔하게) */
+  a[href]::after {
+    content: none !important;
+  }
+
+  /* 프로젝트 그리드를 인쇄에서도 2열 유지 */
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  /* 그리드 갭 축소 */
+  .gap-8 {
+    gap: 1rem !important;
+  }
+}
