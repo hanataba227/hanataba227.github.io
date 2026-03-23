@@ -36,8 +36,13 @@
     print-color-adjust: exact;
   }
 
-  /* 네비게이션 바 및 Back to Home 링크 숨기기 */
-  nav, header, a[href="/"] {
+  /* 상단 고정 네비게이션 바 숨기기 */
+  .fixed.top-0 {
+    display: none !important;
+  }
+
+  /* Back to Home 링크만 숨기기 */
+  a[href="/"].inline-flex {
     display: none !important;
   }
 
