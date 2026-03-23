@@ -63,9 +63,21 @@
     margin-bottom: 0 !important;
   }
 
-  /* pt-20 제거 */
+  /* 상단 패딩 제거 (네비바 고정 영역 보정 불필요) */
   .pt-20 {
     padding-top: 0 !important;
+  }
+
+  .pt-24 {
+    padding-top: 1.5rem !important;
+  }
+
+  .pb-20 {
+    padding-bottom: 0 !important;
+  }
+
+  .min-h-screen {
+    min-height: auto !important;
   }
 
   /* Hero 버튼 숨기기 (인쇄에서 클릭 불가) */
@@ -73,10 +85,73 @@
     display: none !important;
   }
 
-  /* 섹션 간격 축소 */
+  /* 홈 섹션 간격 */
   section {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* 모든 가로선 제거 */
+  * {
+    border-color: transparent !important;
+  }
+
+  /* 프로젝트 상세 페이지 간격 축소 */
+  .space-y-10 > * + * {
+    margin-top: 0.15rem !important;
+  }
+
+  .space-y-10 > :not(:last-child) {
+    margin-bottom: 0 !important;
+  }
+
+  article header {
+    padding-bottom: 0.5rem !important;
+  }
+
+  article header h1 {
+    font-size: 1.6rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  article header p {
+    font-size: 1rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  article section h3 {
+    margin-bottom: 0.4rem !important;
+  }
+
+  /* 프로젝트 상세 내부 여백 축소 */
+  article .mb-8 {
+    margin-bottom: 0.5rem !important;
+  }
+
+  article .mb-3, article .mb-4 {
+    margin-bottom: 0.4rem !important;
+  }
+
+  /* 본문 텍스트 줄 간격 */
+  article p {
+    line-height: 1.8 !important;
+  }
+
+  article .mt-6 {
+    margin-top: 0.25rem !important;
+  }
+
+  article .pb-8 {
+    padding-bottom: 0.5rem !important;
+  }
+
+  /* 프로젝트 상세 링크 버튼 숨기기 */
+  article header .flex.flex-wrap.gap-3 {
+    display: none !important;
+  }
+
+  article .gap-3 {
+    gap: 0.5rem !important;
   }
 
   /* 섹션 제목 간격 축소 */
