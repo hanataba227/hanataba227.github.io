@@ -31,7 +31,8 @@ const projectData: Record<number, Project> = {
         tags: ["OpenAI API", "Streamlit", "Supabase", "pgvector"],
         links: [
             { name: "GitHub Repository", url: "https://github.com/hanataba227/HackLLM", type: "github" },
-            { name: "Project Paper / PS2-8", url: "https://wisa.or.kr/program", type: "paper" }
+            { name: "Project Paper / PS2-8", url: "https://wisa.or.kr/program", type: "paper" },
+            { name: "Download Paper", url: "/papers/Design and Implementation of a Security Vulnerabil.pdf", type: "paper" }
         ],
         intro: "OWASP LLM Top 10의 취약점 시나리오를 바탕으로 제작된 실습형 CTF 플랫폼\n프롬프트 인젝션부터 벡터 검색 교란, 무제한 소비 등 LLM 취약점 10가지를 직접 체험하고 학습할 수 있음",
         team: `구성 : 기획 및 구현 8명
